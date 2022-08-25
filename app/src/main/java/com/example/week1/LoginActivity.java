@@ -32,9 +32,6 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(this,"Error",Toast.LENGTH_SHORT).show();
         }
 
-
-
-
     }
 
     public void exit(View view) {
