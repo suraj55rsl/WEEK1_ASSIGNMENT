@@ -32,11 +32,11 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(this,"Error",Toast.LENGTH_SHORT).show();
         }
 
-
-
-
     }
 
     public void exit(View view) {
+        moveTaskToBack(true);
+        android.os.Process.killProcess(android.os.Process.myPid());
+        System.exit(1);
     }
 }
