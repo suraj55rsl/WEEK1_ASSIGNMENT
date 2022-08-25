@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class ViewActivity extends AppCompatActivity {
-     static int color=1;
+     static int color=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,8 +17,9 @@ public class ViewActivity extends AppCompatActivity {
 
     public void changeColor(View view) {
         ImageView imageView=findViewById(R.id.imageView);
+
         color=(color)%2;
-        color++;
+
         if(color==0)
         {
             imageView.setColorFilter(Color.GRAY);
@@ -27,6 +28,7 @@ public class ViewActivity extends AppCompatActivity {
         {
             imageView.setColorFilter(Color.BLUE);
         }
+        color++;
 
     }
 }
